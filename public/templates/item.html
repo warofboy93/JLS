@@ -1,0 +1,6 @@
+<div class="item" id="<%= item._id %>">
+  <span class="title"><%= item.title %></span>
+  <span class="item-delete-button"><a class="ajax-link" data-callback="remove" data-arg="<%= item._id %>" href="/delete/<%= item._id %>">X</a></span>
+  <div class="des"><%= item.description %></div>
+  <div><%= item.dueDate %></div>
+</div>
