@@ -1,0 +1,82 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="/stylesheets/homepage.css" rel="stylesheet">     
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/js/homepage.js"></script> 
+    </head>
+<body>
+	<header class="topbar topbar-blue-dark dark-theme no-shadow">
+                <div class="container">
+                    <a class="topbar-brand navigate-home track-click white " href="javascript:;"></a>
+                    <div class="topbar-right">
+                        <div class="topbar-buttons" style="margin-top: 1px;">
+                            <span class="sign-in relative">
+                                <span id="sign-in-btn" class="btn sign-in-btn btn-white" onclick = "slideShow('login')">Đăng nhập</span>
+                                <ul id="login" class="popover arrow-top login-popover hidden" style="width: 240px; top: 40px; right: 0px; left: auto;">
+                                    <form id="login-form" style="margin: 0;" accept-charset="utf-8" method="post" action="">
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="top_login" class="input-small input-block" type="text" autocomplete="on" value="" name="login" placeholder="Tên đăng nhập hoặc email">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="top_password" class="input-small input-block" type="password" autocomplete="on" value="" name="password" placeholder="Mật khẩu">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input id="login-button" class="btn btn-green-light btn-small sign-in btn-block" type="submit" value="Đăng nhập">
+                                        </li>
+                                        <li class="center">
+                                            <a href="/forgot_password">Quên mật khẩu</a>
+                                        </li>
+                                    </form>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="topbar-right">
+                        <div class="topbar-buttons" style="margin-top: 1px;">
+                            <span class="sign-in relative">
+                                <span id="register-btn" class="btn sign-in-btn btn-white" onclick=(slideShow('register'))>Đăng ký</span>
+                                <ul id="register" class="popover arrow-top login-popover hidden" style="width: 240px; top: 40px; right: 0px; left: auto; ">
+                                    <form id="register-form" style="margin: 0;" accept-charset="utf-8" method="post" action="">
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="userRegister" class="input-small input-block" type="text" autocomplete="on" value="" name="login" placeholder="Tên đăng nhập ">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="top_login" class="input-small input-block" type="text" autocomplete="on" value="" name="login" placeholder="Mật khẩu">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="top_login" class="input-small input-block" type="text" autocomplete="on" value="" name="login" placeholder="Nhập lại mật khẩu">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="top_password" class="input-small input-block" type="password" autocomplete="on" value="" name="password" placeholder="Email">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-row">
+                                                <input id="top_password" class="input-small input-block" type="password" autocomplete="on" value="" name="password" placeholder="số điện thoại">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input id="login-button" class="btn btn-green-light btn-small sign-in btn-block" type="submit" data-track-click="topbar login submit" value="Đăng ký">
+                                        </li>                             
+                                    </form>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+</body>
+</html>
